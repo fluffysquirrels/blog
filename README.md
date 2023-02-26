@@ -7,7 +7,7 @@
 
 * Install rust, usually with [`rustup`](https://rustup.rs/).
 
-* Install `cobalt`, a static site generator written in Rust.
+* Install [`cobalt`][cobalt], a static site generator written in Rust.
 
     ```sh
     cargo install cobalt-bin
@@ -47,5 +47,7 @@ GitHub Pages will automatically deploy the new content.
 
 Built with:
 
-* [cobalt](https://cobalt-org.github.io/)
+* [cobalt][cobalt]
 * [water.css](https://github.com/kognise/water.css)
+
+[cobalt]: https://cobalt-org.github.io/
