@@ -4,17 +4,20 @@
         <meta charset="utf-8">
         <title>{{ page.title }} | {{ site.title }}</title>
         <link rel="stylesheet" href="{{ site.base_url }}/assets/water.min.css">
+        <link rel="stylesheet" href="{{ site.base_url }}/assets/site.css">
     </head>
     <body>
     <div>
+      <div id="site-nav">
+        <a href="{{ site.base_url }}/">All posts</a>
+        |
+        <a href="{{ site.base_url }}/rss.xml">RSS</a>
+        |
+        <a href="https://github.com/fluffysquirrels/blog">Source</a>
+      </div>
       <h2>fluffysquirrels</h2>
       <p>
         Alex Helfet's personal blog
-        <span id="site-nav">
-          <a href="{{ site.base_url }}/">All posts</a>
-          |
-          <a href="{{ site.base_url }}/rss.xml">RSS</a>
-        </span>
       </p>
       {{ page.content }}
     </div>
