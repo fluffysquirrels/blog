@@ -1,0 +1,12 @@
+destination: docs
+site:
+  title: fluffysquirrels
+  description: Alex Helfet's personal blog
+  base_url: https://fluffysquirrels.github.io/blog
+posts:
+  rss: rss.xml
+  default:
+    layout: default.liquid
+ignore:
+  - README.md
+  - "bin/**"

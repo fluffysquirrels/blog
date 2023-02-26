@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+set -eu -o pipefail
+
+readonly repo_dir="$( cd $(dirname ${BASH_SOURCE})/..; pwd )"
+
+cd "${repo_dir}"
+
+# Delete the output directory first, cobalt seems not to remove output
+# generated from source files that are removed.
+rm -rf "${repo_dir}/docs"
+
+mkdir docs
+touch docs/.nojekyll # Tells GitHub not to use Jekyll to render the site
+
+cobalt build

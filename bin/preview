@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -eu -o pipefail
+
+readonly repo_dir="$( cd $(dirname ${BASH_SOURCE})/..; pwd )"
+
+cd "${repo_dir}"
+
+watchexec --restart --signal SIGKILL --watch ./_cobalt.yml -- cobalt serve
