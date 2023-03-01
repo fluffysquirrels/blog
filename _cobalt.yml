@@ -6,7 +6,7 @@ site:
 posts:
   rss: rss.xml
   default:
-    layout: default.liquid
+    layout: post.liquid
 ignore:
   - README.md
   - "bin/**"

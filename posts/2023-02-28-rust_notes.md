@@ -1,6 +1,4 @@
 ---
-title: sup
+title: Some Rust notes
 ---
-# {{ page.title }}
-
 Welcome to the first post ever on {{ site.title }}!

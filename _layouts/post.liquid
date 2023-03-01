@@ -1,0 +1,6 @@
+{% capture common_content %}
+<h1>{{ page.title | escape }}</h1>
+{{ page.content }}
+<p class="published_date">Published {{ page.published_date | date: "%Y-%m-%d" | escape }}</p>
+{% endcapture %}
+{% include "common.liquid" %}
